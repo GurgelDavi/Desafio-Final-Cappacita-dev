@@ -66,7 +66,9 @@ main{
     background-color: var(--secondary-color);
     position: relative;
     overflow: hidden;
+    align-items: center;
 }
+
 
 .movie-info{
     color: #eee;
@@ -114,6 +116,17 @@ main{
     transform: translateY(101%);
     transition: transform 0.3s ease-in;
 
+}
+
+.overview_mov{
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color : #fff;
+    padding: 1rem;
+    max-height: 100%;
+    text-align: center;
 }
 
 .movie:hover .overview{

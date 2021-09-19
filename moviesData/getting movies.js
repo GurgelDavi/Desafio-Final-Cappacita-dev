@@ -26,7 +26,7 @@ async function getMovie(id){
 }
 
 async function searchMovie(query){
-    const URL = `${baseUrl}/search/movie?api_key=${apiKey}&language=pt-BR&query=${query}&page=1&include_adult=false`
+    const URL = `${baseUrl}/search/movie?api_key=${apiKey}&language=pt-BR&query=${query}&page=1&include_adult=true`
     try {
         const {data} = await axios.get(URL);
         return data
